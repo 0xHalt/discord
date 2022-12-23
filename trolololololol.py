@@ -1,6 +1,6 @@
 from steganography import Steganography as stego
 
-PAYLOAD = "alert(0);"  # Insert your payload here, example 'alert(0);', optionally, use one of the payloads provided in /payloads/
+PAYLOAD = "alert(0);"  
 CHARCODE = "\x00\x32\x38\xF1\xA3\xC7\xF4\x00\xFF\xFF\xFF"
 
 MAX_LEN = 128
@@ -49,3 +49,8 @@ if __name__ == "__main__":
         
     print(f"Your payload: {str(stego.decode(output_path))}")
     print("Process failed, try again.")
+    
+# Generally outdated, still works on some variants of discord like BetterDiscord and LightCord. :)
+
+
+
